@@ -1,13 +1,13 @@
-# TyMD-Schistosoma-Infection-Metabolomics
+# TyMD-Schistosoma-Metabolomics
 
 > **Companion repository for:**  
 > Kameni Poumeni M. et al. "Asymptomatic *Schistosoma mansoni* infection robustly associates with altered tyrosine metabolism in the plasma of school-aged children."  
-> *Nature Communications* (under revision, 2026)
+> *Journal XXXX* (under revision, 2026)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![R version](https://img.shields.io/badge/R-%3E%3D4.2-blue)](https://www.r-project.org/)
-[![MetaboLights](https://img.shields.io/badge/MetaboLights-REQ20260416218755-green)](https://www.ebi.ac.uk/metabolights/)
-[![Metabolomics Workbench](https://img.shields.io/badge/Metabolomics%20Workbench-Kameni237__20260425__110834-orange)](https://www.metabolomicsworkbench.org/)
+[![MetaboLights](https://img.shields.io/badge/MetaboLights-REQ2026xxxxxxxxxx-green)](https://www.ebi.ac.uk/metabolights/)
+[![Metabolomics Workbench](https://img.shields.io/badge/Metabolomics%20Workbench-Kameni237__2026xxxx__xxxxxx-orange)](https://www.metabolomicsworkbench.org/)
 
 ---
 
@@ -15,8 +15,6 @@
 
 This repository contains all R analysis scripts, input data tables, and output figures required to reproduce the metabolomics analyses described in the above manuscript. The study identified a **Tyrosine Metabolism-Derived (TyMD) plasma signature** that robustly distinguishes *S. mansoni*-infected school-aged children from uninfected controls across three independent cohorts, using untargeted LC-MS/MS plasma metabolomics.
 
-A companion repository for the hepatic morbidity paper (Paper 2 — ArgPro/FPAS signature) is available at:  
-**[ArgPro-Schistosoma-Fibrosis-Metabolomics](https://github.com/DrKameni/ArgPro-Schistosoma-Fibrosis-Metabolomics)**
 
 ---
 
@@ -24,26 +22,26 @@ A companion repository for the hepatic morbidity paper (Paper 2 — ArgPro/FPAS 
 
 ### Populations
 
-| Cohort | Design | KK+ Infected | KK− Control | Platform | Notes |
-|--------|--------|:---:|:---:|----------|-------|
-| **Discovery** | Cross-sectional | 38 | 31 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | 7/10 KK− controls CAA-positive (sub-patent); included as controls per pre-specified protocol |
-| **Validation** | Cross-sectional | 32 | 28 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | Independent school, same region |
-| **Polyparasitism** | Cross-sectional | 29 | 26 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | Co-infected with soil-transmitted helminths |
+| Cohort | Design | KK+ Infected | KK− Control | Total | Platform | Notes |
+|--------|--------|:---:|:---:|:---:|----------|-------|
+| **Discovery** | Cross-sectional | 10 | 10 | 20 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | 7/10 KK− controls CAA-positive (sub-patent); retained per pre-specified protocol |
+| **Validation** | Cross-sectional | 23 | 14 | 37 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | Independent school, same region |
+| **Polyparasitism** | Cross-sectional | 7 | 5 | 12 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | Co-infected with soil-transmitted helminths |
+| **Total** | | **40** | **29** | **69** | | |
 
-**Total N:** 184 participants (99 KK+, 85 KK−)  
 **Age range:** 5–17 years (school-aged children)  
 **Setting:** Cameroon (sub-Saharan Africa)  
 **Infection criterion:** Kato-Katz (KK) stool microscopy ≥ 1 egg/slide
 
-> ⚠️ **Critical note on Discovery controls:** Seven of the 31 KK− controls in the Discovery cohort were CAA (Circulating Anodic Antigen) positive, indicating sub-patent infection. These were retained as controls per the pre-specified study protocol. Sensitivity analyses excluding CAA-positive individuals are reported in Supplementary Table S8.
+> ⚠️ **Critical note on Discovery controls:** Seven of the 10 KK− controls in the Discovery cohort were CAA (Circulating Anodic Antigen) positive, indicating sub-patent infection. These were retained as controls per the pre-specified study protocol. Sensitivity analyses excluding CAA-positive individuals are reported in Supplementary Table S....
 
 ### Three-Phase Analytical Design
 
 | Phase | Cohort | Metabolite selection | ML method | Validation approach |
 |-------|--------|---------------------|-----------|---------------------|
-| **Phase 1: Discovery** | Discovery (n=69) | Volcano (FC≥1.2, p<0.1) | RF LOOCV | Internal LOOCV only |
-| **Phase 2: Validation** | Validation (n=60) | Volcano (FC≥1.3, p<0.05) | RF LOOCV | Independent cohort |
-| **Phase 3: Polyparasitism** | Polyparasitism (n=55) | Volcano (FC≥1.5, p<0.05) | RF LOOCV | Co-infection generalizability |
+| **Phase 1: Discovery** | Discovery (n=20) | Volcano (FC≥1.2, p<0.1) | RF LOOCV | Internal LOOCV only |
+| **Phase 2: Validation** | Validation (n=37) | Volcano (FC≥1.3, p<0.05) | RF LOOCV | Independent cohort |
+| **Phase 3: Polyparasitism** | Polyparasitism (n=12) | Volcano (FC≥1.5, p<0.05) | RF LOOCV | Co-infection generalizability |
 
 **Volcano FC thresholds** differ across phases to account for increasing biological noise with parasitic co-infection burden.
 
@@ -84,7 +82,7 @@ The TPAS is a direction-corrected composite z-score computed within each batch:
 | (4-Hydroxy-3-methoxyphenyl)ethanol | Poly | ↑ Up |
 | 3-Methoxytyramine | Disc, Val | ↑ Up |
 
-> ⚠️ **Leakage disclaimer:** RF LOOCV AUC values reported above are **optimistic upper bounds** because volcano-based feature selection was performed on the **full batch** before LOOCV, constituting feature-selection leakage. True generalisation performance is better estimated by the **meta-analysis pooled AUC** or the **combined-cohort LOOCV AUC**. This is acknowledged in the manuscript and reviewer response (MDF comment #59).
+> ⚠️ **Leakage disclaimer:** RF LOOCV AUC values reported above are **optimistic upper bounds** because volcano-based feature selection was performed on the **full batch** before LOOCV, constituting feature-selection leakage. True generalisation performance is better estimated by the **meta-analysis pooled AUC** or the **combined-cohort LOOCV AUC**. This is acknowledged in the manuscript.
 
 ---
 
@@ -233,8 +231,8 @@ Raw metabolomics data have been deposited in two public repositories:
 
 | Repository | Accession / ID | URL |
 |-----------|---------------|-----|
-| **MetaboLights** (EBI) | REQ20260416218755 | https://www.ebi.ac.uk/metabolights/ |
-| **Metabolomics Workbench** | Kameni237_20260425_110834 | https://www.metabolomicsworkbench.org/ |
+| **MetaboLights** (EBI) | REQ2026xxxxxxxxx | https://www.ebi.ac.uk/metabolights/ |
+| **Metabolomics Workbench** | Kameni237_2026xxxx_xxxxxx| https://www.metabolomicsworkbench.org/ |
 
 The input CSV files in `data/` are derived from the PiMP pipeline (Glasgow Polyomics) and correspond directly to the deposited datasets.
 
@@ -244,7 +242,7 @@ The input CSV files in `data/` are derived from the PiMP pipeline (Glasgow Polyo
 
 If you use these scripts or data, please cite:
 
-> Kameni Poumeni, M. et al. Asymptomatic *Schistosoma mansoni* infection robustly associates with altered tyrosine metabolism in the plasma of school-aged children. *Nature Communications* (2026). https://github.com/DrKameni/TyMD-Schistosoma-Infection-Metabolomics
+> Kameni Poumeni, M. et al. Asymptomatic *Schistosoma mansoni* infection robustly associates with altered tyrosine metabolism in the plasma of school-aged children. *Journal XXX* (2026). https://github.com/DrKameni/TyMD-Schistosoma-Metabolomics
 
 ---
 
