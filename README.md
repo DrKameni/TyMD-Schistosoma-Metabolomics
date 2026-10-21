@@ -24,7 +24,7 @@ This repository contains all R analysis scripts, input data tables, and output f
 
 | Cohort | Design | KK+ Infected | KK− Control | Total | Platform | Notes |
 |--------|--------|:---:|:---:|:---:|----------|-------|
-| **Discovery** | Cross-sectional | 10 | 10 | 20 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | 7/10 KK− controls CAA-positive (sub-patent); retained per pre-specified protocol |
+| **Discovery** | Cross-sectional | 10 | 10 | 20 | LCMS/MS (BGI, China) | 7/10 KK− controls CAA-positive (sub-patent); retained per pre-specified protocol |
 | **Validation** | Cross-sectional | 23 | 14 | 37 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | Independent school, same region |
 | **Polyparasitism** | Cross-sectional | 7 | 5 | 12 | ZIC-HILIC Orbitrap (Glasgow Polyomics) | Co-infected with soil-transmitted helminths |
 | **Total** | | **40** | **29** | **69** | | |
@@ -40,8 +40,8 @@ This repository contains all R analysis scripts, input data tables, and output f
 | Phase | Cohort | Metabolite selection | ML method | Validation approach |
 |-------|--------|---------------------|-----------|---------------------|
 | **Phase 1: Discovery** | Discovery (n=20) | Volcano (FC≥1.2, p<0.1) | RF LOOCV | Internal LOOCV only |
-| **Phase 2: Validation** | Validation (n=37) | Volcano (FC≥1.3, p<0.05) | RF LOOCV | Independent cohort |
-| **Phase 3: Polyparasitism** | Polyparasitism (n=12) | Volcano (FC≥1.5, p<0.05) | RF LOOCV | Co-infection generalizability |
+| **Phase 2: Validation** | Validation (n=37) | Volcano (FC≥1.5, p<0.05) | RF LOOCV | Independent cohort |
+| **Phase 3: Polyparasitism** | Polyparasitism (n=12) | Volcano (FC≥2, p<0.05) | RF LOOCV | Co-infection generalizability |
 
 **Volcano FC thresholds** differ across phases to account for increasing biological noise with parasitic co-infection burden.
 
@@ -203,7 +203,7 @@ source("scripts/02_ML_RandomForest_LOOCV.R")
 
 - **Random seed:** `set.seed(42)` is applied at the start of every script that uses random sampling (RF LOOCV, permutation tests)
 - **Missing value imputation:** Half-minimum per column (left-censored LC-MS/MS convention); applied independently within each batch
-- **Volcano thresholds:** Discovery FC≥1.2, p<0.1; Validation FC≥1.3, p<0.05; Polyparasitism FC≥1.5, p<0.05
+- **Volcano thresholds:** Discovery FC≥1.2, p<0.1; Validation FC≥1.5, p<0.05; Polyparasitism FC≥2, p<0.05
 - **FDR correction:** Benjamini-Hochberg (BH) throughout
 - **Expected runtime:** ~25–40 min on a standard laptop (LOOCV with SHAP is the bottleneck)
 
