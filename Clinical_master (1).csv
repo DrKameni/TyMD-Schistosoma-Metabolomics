@@ -1,0 +1,70 @@
+SampleID,Batch,Group,Age,Sex,EPG,Hb_gdL,HBV,HCV,Malaria_RDT,IL33_pgml,CAA_ID,CAA_conc_pgml,CAA_status
+B463,Discovery,Control,10,F,0,10.9,Negative,Negative,Plasmodium falciparum,49.2496,44,28.47,positive
+E940,Discovery,Control,10,M,0,12.5,Negative,Negative,Plasmodium falciparum,38.87588,55,30.7,positive
+E943,Discovery,Control,10,M,0,15.2,Negative,Negative,Plasmodium falciparum,31.43464,21,19.98,positive
+E958,Discovery,Control,10,F,0,14.7,Negative,Negative,Plasmodium falciparum,32.7478,56,15.65,positive
+E976,Discovery,Control,8,M,0,13.0,Negative,Negative,Mixte infection,-0.99982,23,25.28,positive
+Y207,Discovery,Control,13,F,0,14.1,Negative,Negative,Plasmodium falciparum,25.94858,99,0.0,negative
+Y222,Discovery,Control,12,M,0,,Negative,Negative,,4.38986,72,145.31,positive
+Y62,Discovery,Control,10,M,0,10.9,Negative,Negative,Mixte infection,-9.53348,,,negative
+Y63,Discovery,Control,11,F,0,12.5,Negative,Negative,Plasmodium falciparum,17.31551,69,13.61,positive
+Y67,Discovery,Control,9,F,0,12.5,Negative,Negative,Negative,56.98229,,,negative
+B433,Discovery,Infected,14,F,0,10.9,Negative,Negative,Plasmodium falciparum,58.7068,,,negative
+K742,Discovery,Infected,9,F,24,12.5,Negative,Negative,Mixte infection,18.5295,,,negative
+Y215,Discovery,Infected,15,M,0,10.9,Negative,Negative,Negative,22.78679,,,negative
+Y218,Discovery,Infected,13,F,120,12.0,Negative,Negative,Plasmodium falciparum,23.4707,,,negative
+Y219,Discovery,Infected,12,M,72,10.9,Negative,Negative,Plasmodium falciparum,17.99942,,,negative
+Y227,Discovery,Infected,10,M,0,12.5,Negative,Negative,Plasmodium falciparum,17.99942,,,negative
+Y236,Discovery,Infected,10,F,0,12.5,Negative,Negative,Mixte infection,24.83852,,,negative
+Y265,Discovery,Infected,9,F,0,15.0,Negative,Negative,Mixte infection,17.31551,,,negative
+Y51,Discovery,Infected,12,F,240,15.6,Negative,Negative,Plasmodium falciparum,18.68333,,,negative
+Y74,Discovery,Infected,15,M,504,15.0,Negative,Negative,Negative,15.26378,,,negative
+B408,Polyparasitism,Control,12,M,0,10.9,Negative,Negative,Plasmodium falciparum,31.386,24,0.0,negative
+B412,Polyparasitism,Control,13,M,0,10.9,Positive,Negative,Negative,31.386,25,0.0,negative
+B481,Polyparasitism,Control,13,F,0,10.9,Negative,Negative,Plasmodium falciparum,35.5892,26,0.0,negative
+E951,Polyparasitism,Control,8,M,0,13.0,Negative,Negative,Plasmodium falciparum,29.24604,22,0.0,negative
+K744,Polyparasitism,Control,10,F,0,12.5,Negative,Positive,Negative,16.592,32,3.25,positive
+B442,Polyparasitism,Infected,13,F,48,10.9,Positive,Negative,Mixte infection,28.25807,,,negative
+K742,Polyparasitism,Infected,9,F,24,12.5,Negative,Negative,Mixte infection,18.5295,,,negative
+Y216,Polyparasitism,Infected,10,M,24,12.5,Negative,Negative,Mixte infection,19.36724,,,negative
+Y236,Polyparasitism,Infected,10,F,0,12.5,Negative,Negative,Mixte infection,24.83852,,,negative
+Y258,Polyparasitism,Infected,15,M,0,10.9,Positive,Positive,Plasmodium falciparum,30.3098,,,negative
+Y31,Polyparasitism,Infected,13,M,0,15.0,Negative,Positive,Mixte infection,15.26378,,,negative
+Y4,Polyparasitism,Infected,13,F,504,15.6,Positive,Negative,Negative,12.52814,,,negative
+B404,Validation,Control,15,F,0,13.0,Negative,Negative,Plasmodium falciparum,61.8592,38,4.87,positive
+B408,Validation,Control,12,M,0,10.9,Negative,Negative,Plasmodium falciparum,31.386,24,0.0,negative
+B412,Validation,Control,13,M,0,10.9,Positive,Negative,Negative,31.386,25,0.0,negative
+B437,Validation,Control,11,M,0,8.4,Negative,Negative,Negative,31.386,41,3.53,positive
+B459,Validation,Control,13,F,0,10.9,Negative,Negative,Mixte infection,240.4952,99,0.0,negative
+B481,Validation,Control,13,F,0,10.9,Negative,Negative,Plasmodium falciparum,35.5892,26,0.0,negative
+B573,Validation,Control,9,F,0,,Negative,Negative,,,28,0.0,negative
+E951,Validation,Control,8,M,0,13.0,Negative,Negative,Plasmodium falciparum,29.24604,22,0.0,negative
+K707,Validation,Control,13,M,0,14.1,Negative,Negative,Mixte infection,18.142,48,0.0,negative
+K720,Validation,Control,12,F,0,10.9,Negative,Negative,Mixte infection,17.367,49,0.0,negative
+K723,Validation,Control,15,M,0,11.7,Negative,Negative,Mixte infection,16.2045,50,0.0,negative
+K744,Validation,Control,10,F,0,12.5,Negative,Positive,Negative,16.592,32,3.25,positive
+K804,Validation,Control,10,F,0,11.7,Negative,Negative,Negative,24.7295,34,7.14,positive
+Y1,Validation,Control,14,F,0,15.0,Negative,Negative,Negative,34.06096,67,0.0,negative
+B433,Validation,Infected,14,F,0,10.9,Negative,Negative,Plasmodium falciparum,58.7068,,,negative
+B442,Validation,Infected,13,F,48,10.9,Positive,Negative,Mixte infection,28.25807,,,negative
+E911,Validation,Infected,12,M,24,10.9,Negative,Negative,Plasmodium falciparum,37.517,,,negative
+K742,Validation,Infected,9,F,24,12.5,Negative,Negative,Mixte infection,18.5295,,,negative
+Y208,Validation,Infected,11,M,0,11.5,Negative,Negative,Mixte infection,24.83852,,,negative
+Y215,Validation,Infected,15,M,0,10.9,Negative,Negative,Negative,22.78679,,,negative
+Y216,Validation,Infected,10,M,24,12.5,Negative,Negative,Mixte infection,19.36724,,,negative
+Y218,Validation,Infected,13,F,120,12.0,Negative,Negative,Plasmodium falciparum,23.4707,,,negative
+Y219,Validation,Infected,12,M,72,10.9,Negative,Negative,Plasmodium falciparum,17.99942,,,negative
+Y227,Validation,Infected,10,M,0,12.5,Negative,Negative,Plasmodium falciparum,17.99942,,,negative
+Y236,Validation,Infected,10,F,0,12.5,Negative,Negative,Mixte infection,24.83852,,,negative
+Y238,Validation,Infected,11,F,96,11.5,Negative,Negative,Plasmodium falciparum,18.68333,,,negative
+Y242,Validation,Infected,14,M,72,15.6,Negative,Negative,Mixte infection,16.6316,,,negative
+Y247,Validation,Infected,10,M,0,12.5,Negative,Negative,Mixte infection,23.4707,,,negative
+Y251,Validation,Infected,10,F,0,12.5,Negative,Negative,Plasmodium falciparum,113.74682,,,negative
+Y258,Validation,Infected,15,M,0,10.9,Positive,Positive,Plasmodium falciparum,30.3098,,,negative
+Y265,Validation,Infected,9,F,0,15.0,Negative,Negative,Mixte infection,17.31551,,,negative
+Y266,Validation,Infected,9,F,0,10.9,Negative,Negative,Plasmodium falciparum,78.1835,,,negative
+Y280,Validation,Infected,8,F,0,14.1,Negative,Negative,Mixte infection,16.6316,,,negative
+Y31,Validation,Infected,13,M,0,15.0,Negative,Positive,Mixte infection,15.26378,,,negative
+Y4,Validation,Infected,13,F,504,15.6,Positive,Negative,Negative,12.52814,,,negative
+Y40,Validation,Infected,12,M,24,15.6,Negative,Negative,Mixte infection,17.31551,,,negative
+Y57,Validation,Infected,11,M,0,14.7,Negative,Negative,Plasmodium falciparum,17.31551,,,negative
