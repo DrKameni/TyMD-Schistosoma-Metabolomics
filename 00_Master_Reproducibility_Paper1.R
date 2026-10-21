@@ -1,11 +1,11 @@
 ##############################################################################
 #  00_Master_Reproducibility_Paper1.R
 #
-#  Repository : TyMD-Schistosoma-Infection-Metabolomics
+#  Repository : TyMD-Schistosoma-Metabolomics
 #  Paper      : "Asymptomatic Schistosoma mansoni infection robustly
 #               associates with altered tyrosine metabolism in the plasma
 #               of school-aged children."
-#  Authors    : Kameni Poumeni M. et al. | Nature Communications (2026)
+#  Authors    : Kameni Poumeni M. et al. | Journal XXX (2026)
 #
 #  Purpose    : Run all 9 analysis steps in order, check dependencies,
 #               verify expected outputs, and print a reproducibility report.
@@ -19,7 +19,7 @@
 
 cat("\n")
 cat("╔══════════════════════════════════════════════════════════════════════╗\n")
-cat("║   TyMD-Schistosoma-Infection-Metabolomics  —  Reproducibility Run   ║\n")
+cat("║   TyMD-Schistosoma-Metabolomics  —  Reproducibility Run   ║\n")
 cat("╚══════════════════════════════════════════════════════════════════════╝\n\n")
 cat("R version:", R.version.string, "\n")
 cat("Date     :", format(Sys.time(), "%Y-%m-%d %H:%M:%S"), "\n\n")
@@ -76,8 +76,8 @@ if (length(missing_files) > 0) {
   cat("⚠ Missing input files:\n")
   for (f in missing_files) cat("  -", f, "\n")
   cat("\nDownload raw data from:\n")
-  cat("  MetaboLights : https://www.ebi.ac.uk/metabolights/ (REQ20260416218755)\n")
-  cat("  Metabolomics Workbench : Kameni237_20260425_110834\n\n")
+  cat("  MetaboLights : https://www.ebi.ac.uk/metabolights/ (REQ2026xxxxxxxxxx)\n")
+  cat("  Metabolomics Workbench : Kameni237_2026xxxx_xxxxxx\n\n")
   stop("Please ensure all input data files are present before proceeding.")
 } else {
   cat("✓ All input data files found.\n\n")
@@ -212,7 +212,7 @@ cat(sprintf("\nSteps completed: %d / %d   |   Total runtime: %.1f sec (%.1f min)
 
 if (n_fail == 0) {
   cat("\n✓ All steps completed successfully. Figures in figures/ — Tables in tables/\n")
-  cat("  Cite as: Kameni Poumeni M. et al. Nature Communications (2026)\n")
+  cat("  Cite as: Kameni Poumeni M. et al. Journal xxxx (2026)\n")
 } else {
   cat(sprintf("\n⚠ %d step(s) failed. Check error messages above.\n", n_fail))
 }
@@ -220,8 +220,8 @@ if (n_fail == 0) {
 cat("\n")
 cat("──────────────────────────────────────────────────────────────────────\n")
 cat("  Data deposited at:\n")
-cat("  MetaboLights          : REQ20260416218755\n")
-cat("  Metabolomics Workbench: Kameni237_20260425_110834\n")
+cat("  MetaboLights          : REQ2026xxxxxxxxxx\n")
+cat("  Metabolomics Workbench: Kameni237_2026xxxx_xxxxxx\n")
 cat("──────────────────────────────────────────────────────────────────────\n\n")
 
 # ─────────────────────────────────────────────────────────────────────────────
